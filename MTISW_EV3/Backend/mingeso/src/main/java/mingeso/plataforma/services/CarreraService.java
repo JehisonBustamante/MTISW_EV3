@@ -6,9 +6,9 @@ import org.springframework.stereotype.Service;
 import java.util.ArrayList;
 
 @Service
-public class carreraService {
+public class CarreraService {
     @Autowired
-    private mingeso.plataforma.repositories.carreraRepository carreraRepository;
+    private mingeso.plataforma.repositories.CarreraRepository carreraRepository;
 
     public ArrayList<carreraEntity> getAllCarreras(){
         return (ArrayList<carreraEntity>) carreraRepository.findAll();

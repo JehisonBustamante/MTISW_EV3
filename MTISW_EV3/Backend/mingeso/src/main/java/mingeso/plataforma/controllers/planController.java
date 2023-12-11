@@ -13,7 +13,7 @@ import java.util.ArrayList;
 public class planController {
 
     @Autowired
-    private mingeso.plataforma.services.planService planService;
+    private mingeso.plataforma.services.PlanService planService;
 
     @PostMapping()
     public ResponseEntity<planEntity> crearPlanEstudiante(@RequestBody planEntity plan){

@@ -1,9 +1,9 @@
 package mingeso.plataforma.controllers;
+import mingeso.plataforma.services.CarreraService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import mingeso.plataforma.entities.carreraEntity;
-import mingeso.plataforma.services.carreraService;
 
 import java.util.ArrayList;
 
@@ -13,7 +13,7 @@ import java.util.ArrayList;
 public class carreraController{
 
     @Autowired
-    private carreraService carreraService;
+    private CarreraService carreraService;
 
     @GetMapping()
     public ResponseEntity<ArrayList<carreraEntity>> getAllCarrers(){

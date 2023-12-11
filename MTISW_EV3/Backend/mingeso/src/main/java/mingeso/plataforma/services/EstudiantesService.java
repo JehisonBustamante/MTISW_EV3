@@ -6,10 +6,10 @@ import java.util.ArrayList;
 
 
 @Service
-public class estudiantesService {
+public class EstudiantesService {
 
     @Autowired
-    mingeso.plataforma.repositories.estudiantesRepository estudiantesRepository;
+    mingeso.plataforma.repositories.EstudiantesRepository estudiantesRepository;
     
     public ArrayList<estudiantesEntity> obtenerEstudiantes(){
         return (ArrayList<estudiantesEntity>) estudiantesRepository.findAll();

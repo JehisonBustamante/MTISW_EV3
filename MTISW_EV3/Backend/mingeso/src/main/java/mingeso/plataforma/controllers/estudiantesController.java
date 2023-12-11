@@ -12,7 +12,7 @@ import java.util.ArrayList;
 @CrossOrigin(origins = "http://localhost:3000")
 public class estudiantesController {
     @Autowired
-    mingeso.plataforma.services.estudiantesService estudiantesService;
+    mingeso.plataforma.services.EstudiantesService estudiantesService;
 
     @GetMapping()
     public ResponseEntity<ArrayList<estudiantesEntity>> getAllEstudents(){

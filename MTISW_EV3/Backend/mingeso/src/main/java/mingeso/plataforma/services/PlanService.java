@@ -6,10 +6,10 @@ import java.util.ArrayList;
 
 
 @Service
-public class planService {
+public class PlanService {
 
     @Autowired
-    private mingeso.plataforma.repositories.planRepository planRepository;
+    private mingeso.plataforma.repositories.PlanRepository planRepository;
 
     public planEntity crearPlanEstudiante(planEntity plan){
         return planRepository.save(plan);
